@@ -1,19 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 //application will fetch data from a demo site
 ///then eventually do this while using custom hooks
 
 
 const App2 = () => {
-    //initialize the state variable at the component level always
-    const getPosts = () => {
+    // using custon hooks 
+    
 
-    }
-    useEffect(()=>{
-        getPosts();
-    })
-  return (
+    return (
     <div>
-
+        {/* Yo B! {posts} */}
+        YO B!{posts.name}
     </div>
   )
 }
