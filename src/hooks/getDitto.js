@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export function getDittoName () {
+export function useDittoName () {
     const [posts,setPosts] = useState({});
     const getName = async () => {
         const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
@@ -12,7 +12,5 @@ export function getDittoName () {
     useEffect(()=>{
         getName()
     },[])
-
     return posts.name;
-    
 }
